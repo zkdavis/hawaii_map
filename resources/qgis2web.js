@@ -441,7 +441,7 @@ var onSingleClick = function(evt) {
 
 
 map.on('singleclick', function(evt) {
-     onPointerMove(evt);
+    onSingleClick(evt);
 });
 
     var measureControl = document.querySelector(".measure-control");
