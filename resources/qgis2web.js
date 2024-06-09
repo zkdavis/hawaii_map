@@ -439,11 +439,9 @@ var onSingleClick = function(evt) {
     });
     
 
-map.on('pointermove', function(evt) {
-    onPointerMove(evt);
-});
+
 map.on('singleclick', function(evt) {
-    onSingleClick(evt);
+     onPointerMove(evt);
 });
 
     var measureControl = document.querySelector(".measure-control");
