@@ -93,7 +93,7 @@ map.addControl(layerSwitcher);
 
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-17573569.422338, 2425936.745126, -17570432.472138, 2429079.472399], map.getSize());
+map.getView().fit([-17580777.861147, 2420759.300591, -17554167.030716, 2441866.460922], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -441,7 +441,7 @@ var onSingleClick = function(evt) {
 
 
 map.on('singleclick', function(evt) {
-    onSingleClick(evt);
+    onPointerMove(evt);
 });
 
     var measureControl = document.querySelector(".measure-control");

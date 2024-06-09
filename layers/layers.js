@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([-17573569.422338, 2425936.745126, -17570432.472138, 2429079.472399]);
+//ol.proj.get("EPSG:3857").setExtent([-17580777.861147, 2420759.300591, -17554167.030716, 2441866.460922]);
 var wms_layers = [];
 
 
@@ -327,204 +327,226 @@ var lyr_Bus_Stops_3 = new ol.layer.Vector({
                 interactive: true,
                     title: '<img src="styles/legend/Bus_Stops_3.png" /> Bus_Stops'
                 });
-var format_ParksPark_Types_Data_4 = new ol.format.GeoJSON();
-var features_ParksPark_Types_Data_4 = format_ParksPark_Types_Data_4.readFeatures(json_ParksPark_Types_Data_4, 
+var format_Gyms_4 = new ol.format.GeoJSON();
+var features_Gyms_4 = format_Gyms_4.readFeatures(json_Gyms_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ParksPark_Types_Data_4 = new ol.source.Vector({
+var jsonSource_Gyms_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ParksPark_Types_Data_4.addFeatures(features_ParksPark_Types_Data_4);
-var lyr_ParksPark_Types_Data_4 = new ol.layer.Vector({
+jsonSource_Gyms_4.addFeatures(features_Gyms_4);
+var lyr_Gyms_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ParksPark_Types_Data_4, 
-                style: style_ParksPark_Types_Data_4,
-                popuplayertitle: "Parks — Park_Types_Data",
-                interactive: true,
-                title: 'Parks — Park_Types_Data'
-            });
-var format_Gyms_5 = new ol.format.GeoJSON();
-var features_Gyms_5 = format_Gyms_5.readFeatures(json_Gyms_5, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Gyms_5 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Gyms_5.addFeatures(features_Gyms_5);
-var lyr_Gyms_5 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Gyms_5, 
-                style: style_Gyms_5,
+                source:jsonSource_Gyms_4, 
+                style: style_Gyms_4,
                 popuplayertitle: "Gyms",
                 interactive: true,
-                    title: '<img src="styles/legend/Gyms_5.png" /> Gyms'
+                    title: '<img src="styles/legend/Gyms_4.png" /> Gyms'
                 });
-var format_CoffeeShops_6 = new ol.format.GeoJSON();
-var features_CoffeeShops_6 = format_CoffeeShops_6.readFeatures(json_CoffeeShops_6, 
+var format_CoffeeShops_5 = new ol.format.GeoJSON();
+var features_CoffeeShops_5 = format_CoffeeShops_5.readFeatures(json_CoffeeShops_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CoffeeShops_6 = new ol.source.Vector({
+var jsonSource_CoffeeShops_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_CoffeeShops_6.addFeatures(features_CoffeeShops_6);
-var lyr_CoffeeShops_6 = new ol.layer.Vector({
+jsonSource_CoffeeShops_5.addFeatures(features_CoffeeShops_5);
+var lyr_CoffeeShops_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_CoffeeShops_6, 
-                style: style_CoffeeShops_6,
+                source:jsonSource_CoffeeShops_5, 
+                style: style_CoffeeShops_5,
                 popuplayertitle: "Coffee Shops",
                 interactive: true,
-                    title: '<img src="styles/legend/CoffeeShops_6.png" /> Coffee Shops'
+                    title: '<img src="styles/legend/CoffeeShops_5.png" /> Coffee Shops'
                 });
-var format_Bars_7 = new ol.format.GeoJSON();
-var features_Bars_7 = format_Bars_7.readFeatures(json_Bars_7, 
+var format_Bars_6 = new ol.format.GeoJSON();
+var features_Bars_6 = format_Bars_6.readFeatures(json_Bars_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Bars_7 = new ol.source.Vector({
+var jsonSource_Bars_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Bars_7.addFeatures(features_Bars_7);
-var lyr_Bars_7 = new ol.layer.Vector({
+jsonSource_Bars_6.addFeatures(features_Bars_6);
+var lyr_Bars_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Bars_7, 
-                style: style_Bars_7,
+                source:jsonSource_Bars_6, 
+                style: style_Bars_6,
                 popuplayertitle: "Bars",
                 interactive: true,
-                    title: '<img src="styles/legend/Bars_7.png" /> Bars'
+                    title: '<img src="styles/legend/Bars_6.png" /> Bars'
                 });
-var format_Beach_8 = new ol.format.GeoJSON();
-var features_Beach_8 = format_Beach_8.readFeatures(json_Beach_8, 
+var format_Beach_7 = new ol.format.GeoJSON();
+var features_Beach_7 = format_Beach_7.readFeatures(json_Beach_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Beach_8 = new ol.source.Vector({
+var jsonSource_Beach_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Beach_8.addFeatures(features_Beach_8);
-var lyr_Beach_8 = new ol.layer.Vector({
+jsonSource_Beach_7.addFeatures(features_Beach_7);
+var lyr_Beach_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Beach_8, 
-                style: style_Beach_8,
+                source:jsonSource_Beach_7, 
+                style: style_Beach_7,
                 popuplayertitle: "Beach",
                 interactive: true,
-                    title: '<img src="styles/legend/Beach_8.png" /> Beach'
+                    title: '<img src="styles/legend/Beach_7.png" /> Beach'
                 });
-var format_Trails_9 = new ol.format.GeoJSON();
-var features_Trails_9 = format_Trails_9.readFeatures(json_Trails_9, 
+var format_Trails_8 = new ol.format.GeoJSON();
+var features_Trails_8 = format_Trails_8.readFeatures(json_Trails_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Trails_9 = new ol.source.Vector({
+var jsonSource_Trails_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Trails_9.addFeatures(features_Trails_9);
-var lyr_Trails_9 = new ol.layer.Vector({
+jsonSource_Trails_8.addFeatures(features_Trails_8);
+var lyr_Trails_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Trails_9, 
-                style: style_Trails_9,
+                source:jsonSource_Trails_8, 
+                style: style_Trails_8,
                 popuplayertitle: "Trails",
                 interactive: true,
-                    title: '<img src="styles/legend/Trails_9.png" /> Trails'
+                    title: '<img src="styles/legend/Trails_8.png" /> Trails'
                 });
-var format_MovieTheaters_10 = new ol.format.GeoJSON();
-var features_MovieTheaters_10 = format_MovieTheaters_10.readFeatures(json_MovieTheaters_10, 
+var format_MovieTheaters_9 = new ol.format.GeoJSON();
+var features_MovieTheaters_9 = format_MovieTheaters_9.readFeatures(json_MovieTheaters_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_MovieTheaters_10 = new ol.source.Vector({
+var jsonSource_MovieTheaters_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_MovieTheaters_10.addFeatures(features_MovieTheaters_10);
-var lyr_MovieTheaters_10 = new ol.layer.Vector({
+jsonSource_MovieTheaters_9.addFeatures(features_MovieTheaters_9);
+var lyr_MovieTheaters_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_MovieTheaters_10, 
-                style: style_MovieTheaters_10,
+                source:jsonSource_MovieTheaters_9, 
+                style: style_MovieTheaters_9,
                 popuplayertitle: "Movie Theaters",
                 interactive: true,
-                    title: '<img src="styles/legend/MovieTheaters_10.png" /> Movie Theaters'
+                    title: '<img src="styles/legend/MovieTheaters_9.png" /> Movie Theaters'
                 });
-var format_Hotels1Hotels_11 = new ol.format.GeoJSON();
-var features_Hotels1Hotels_11 = format_Hotels1Hotels_11.readFeatures(json_Hotels1Hotels_11, 
+var format_Hotels1Hotels_10 = new ol.format.GeoJSON();
+var features_Hotels1Hotels_10 = format_Hotels1Hotels_10.readFeatures(json_Hotels1Hotels_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Hotels1Hotels_11 = new ol.source.Vector({
+var jsonSource_Hotels1Hotels_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Hotels1Hotels_11.addFeatures(features_Hotels1Hotels_11);
-var lyr_Hotels1Hotels_11 = new ol.layer.Vector({
+jsonSource_Hotels1Hotels_10.addFeatures(features_Hotels1Hotels_10);
+var lyr_Hotels1Hotels_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Hotels1Hotels_11, 
-                style: style_Hotels1Hotels_11,
+                source:jsonSource_Hotels1Hotels_10, 
+                style: style_Hotels1Hotels_10,
                 popuplayertitle: "Hotels(1) — Hotels",
                 interactive: true,
-                    title: '<img src="styles/legend/Hotels1Hotels_11.png" /> Hotels(1) — Hotels'
+                    title: '<img src="styles/legend/Hotels1Hotels_10.png" /> Hotels(1) — Hotels'
                 });
-var format_Museum_12 = new ol.format.GeoJSON();
-var features_Museum_12 = format_Museum_12.readFeatures(json_Museum_12, 
+var format_Museum_11 = new ol.format.GeoJSON();
+var features_Museum_11 = format_Museum_11.readFeatures(json_Museum_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Museum_12 = new ol.source.Vector({
+var jsonSource_Museum_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Museum_12.addFeatures(features_Museum_12);cluster_Museum_12 = new ol.source.Cluster({
+jsonSource_Museum_11.addFeatures(features_Museum_11);cluster_Museum_11 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_Museum_12
+  source: jsonSource_Museum_11
 });
-var lyr_Museum_12 = new ol.layer.Vector({
+var lyr_Museum_11 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_Museum_12, 
-                style: style_Museum_12,
+                source:cluster_Museum_11, 
+                style: style_Museum_11,
                 popuplayertitle: "Museum",
                 interactive: true,
-                    title: '<img src="styles/legend/Museum_12.png" /> Museum'
+                    title: '<img src="styles/legend/Museum_11.png" /> Museum'
                 });
-var format_ZooandGardens_13 = new ol.format.GeoJSON();
-var features_ZooandGardens_13 = format_ZooandGardens_13.readFeatures(json_ZooandGardens_13, 
+var format_ZooandGardens_12 = new ol.format.GeoJSON();
+var features_ZooandGardens_12 = format_ZooandGardens_12.readFeatures(json_ZooandGardens_12, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ZooandGardens_13 = new ol.source.Vector({
+var jsonSource_ZooandGardens_12 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ZooandGardens_13.addFeatures(features_ZooandGardens_13);cluster_ZooandGardens_13 = new ol.source.Cluster({
+jsonSource_ZooandGardens_12.addFeatures(features_ZooandGardens_12);cluster_ZooandGardens_12 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_ZooandGardens_13
+  source: jsonSource_ZooandGardens_12
 });
-var lyr_ZooandGardens_13 = new ol.layer.Vector({
+var lyr_ZooandGardens_12 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_ZooandGardens_13, 
-                style: style_ZooandGardens_13,
+                source:cluster_ZooandGardens_12, 
+                style: style_ZooandGardens_12,
                 popuplayertitle: "Zoo and Gardens",
                 interactive: true,
-                    title: '<img src="styles/legend/ZooandGardens_13.png" /> Zoo and Gardens'
+                    title: '<img src="styles/legend/ZooandGardens_12.png" /> Zoo and Gardens'
                 });
-var format_GroceryStores_14 = new ol.format.GeoJSON();
-var features_GroceryStores_14 = format_GroceryStores_14.readFeatures(json_GroceryStores_14, 
+var format_GroceryStores_13 = new ol.format.GeoJSON();
+var features_GroceryStores_13 = format_GroceryStores_13.readFeatures(json_GroceryStores_13, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GroceryStores_14 = new ol.source.Vector({
+var jsonSource_GroceryStores_13 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GroceryStores_14.addFeatures(features_GroceryStores_14);cluster_GroceryStores_14 = new ol.source.Cluster({
+jsonSource_GroceryStores_13.addFeatures(features_GroceryStores_13);cluster_GroceryStores_13 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_GroceryStores_14
+  source: jsonSource_GroceryStores_13
 });
-var lyr_GroceryStores_14 = new ol.layer.Vector({
+var lyr_GroceryStores_13 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_GroceryStores_14, 
-                style: style_GroceryStores_14,
+                source:cluster_GroceryStores_13, 
+                style: style_GroceryStores_13,
                 popuplayertitle: "Grocery Stores",
                 interactive: true,
-                    title: '<img src="styles/legend/GroceryStores_14.png" /> Grocery Stores'
+                    title: '<img src="styles/legend/GroceryStores_13.png" /> Grocery Stores'
                 });
-var format_University_15 = new ol.format.GeoJSON();
-var features_University_15 = format_University_15.readFeatures(json_University_15, 
+var format_University_14 = new ol.format.GeoJSON();
+var features_University_14 = format_University_14.readFeatures(json_University_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_University_15 = new ol.source.Vector({
+var jsonSource_University_14 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_University_15.addFeatures(features_University_15);cluster_University_15 = new ol.source.Cluster({
+jsonSource_University_14.addFeatures(features_University_14);cluster_University_14 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_University_15
+  source: jsonSource_University_14
 });
-var lyr_University_15 = new ol.layer.Vector({
+var lyr_University_14 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_University_15, 
-                style: style_University_15,
+                source:cluster_University_14, 
+                style: style_University_14,
                 popuplayertitle: "University",
                 interactive: true,
-                    title: '<img src="styles/legend/University_15.png" /> University'
+                    title: '<img src="styles/legend/University_14.png" /> University'
                 });
+var format_CostcoSamsWalmart_15 = new ol.format.GeoJSON();
+var features_CostcoSamsWalmart_15 = format_CostcoSamsWalmart_15.readFeatures(json_CostcoSamsWalmart_15, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_CostcoSamsWalmart_15 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_CostcoSamsWalmart_15.addFeatures(features_CostcoSamsWalmart_15);
+var lyr_CostcoSamsWalmart_15 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_CostcoSamsWalmart_15, 
+                style: style_CostcoSamsWalmart_15,
+                popuplayertitle: "Costco-Sams-Walmart",
+                interactive: true,
+                    title: '<img src="styles/legend/CostcoSamsWalmart_15.png" /> Costco-Sams-Walmart'
+                });
+var format_Isochrones_16 = new ol.format.GeoJSON();
+var features_Isochrones_16 = format_Isochrones_16.readFeatures(json_Isochrones_16, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Isochrones_16 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Isochrones_16.addFeatures(features_Isochrones_16);
+var lyr_Isochrones_16 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Isochrones_16, 
+                style: style_Isochrones_16,
+                popuplayertitle: "Isochrones",
+                interactive: true,
+    title: 'Isochrones<br />\
+    <img src="styles/legend/Isochrones_16_0.png" /> 5 min<br />\
+    <img src="styles/legend/Isochrones_16_1.png" /> 15 min<br />\
+    <img src="styles/legend/Isochrones_16_2.png" /> 30 min<br />\
+    <img src="styles/legend/Isochrones_16_3.png" /> 45 min<br />\
+    <img src="styles/legend/Isochrones_16_4.png" /> 60 min<br />\
+    <img src="styles/legend/Isochrones_16_5.png" /> 90 min<br />\
+    <img src="styles/legend/Isochrones_16_6.png" /> 120 min<br />'
+        });
 var group_Added_Location = new ol.layer.Group({
-                                layers: [lyr_Gyms_5,lyr_CoffeeShops_6,lyr_Bars_7,lyr_Beach_8,lyr_Trails_9,lyr_MovieTheaters_10,lyr_Hotels1Hotels_11,lyr_Museum_12,lyr_ZooandGardens_13,lyr_GroceryStores_14,lyr_University_15,],
+                                layers: [lyr_Gyms_4,lyr_CoffeeShops_5,lyr_Bars_6,lyr_Beach_7,lyr_Trails_8,lyr_MovieTheaters_9,lyr_Hotels1Hotels_10,lyr_Museum_11,lyr_ZooandGardens_12,lyr_GroceryStores_13,lyr_University_14,lyr_CostcoSamsWalmart_15,],
                                 fold: "open",
                                 title: "Added_Location"});
 var group_Added_KMLs = new ol.layer.Group({
-                                layers: [lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1,lyr_Bus_Routes_2,lyr_Bus_Stops_3,lyr_ParksPark_Types_Data_4,],
+                                layers: [lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1,lyr_Bus_Routes_2,lyr_Bus_Stops_3,],
                                 fold: "open",
                                 title: "Added_KMLs"});
 var group_BaseMaps = new ol.layer.Group({
@@ -532,53 +554,56 @@ var group_BaseMaps = new ol.layer.Group({
                                 fold: "open",
                                 title: "BaseMaps"});
 
-lyr_GoogleRoad_0.setVisible(true);lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1.setVisible(true);lyr_Bus_Routes_2.setVisible(true);lyr_Bus_Stops_3.setVisible(false);lyr_ParksPark_Types_Data_4.setVisible(true);lyr_Gyms_5.setVisible(true);lyr_CoffeeShops_6.setVisible(true);lyr_Bars_7.setVisible(true);lyr_Beach_8.setVisible(true);lyr_Trails_9.setVisible(true);lyr_MovieTheaters_10.setVisible(true);lyr_Hotels1Hotels_11.setVisible(true);lyr_Museum_12.setVisible(true);lyr_ZooandGardens_13.setVisible(true);lyr_GroceryStores_14.setVisible(true);lyr_University_15.setVisible(true);
-var layersList = [group_BaseMaps,group_Added_KMLs,group_Added_Location];
+lyr_GoogleRoad_0.setVisible(true);lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1.setVisible(false);lyr_Bus_Routes_2.setVisible(true);lyr_Bus_Stops_3.setVisible(false);lyr_Gyms_4.setVisible(true);lyr_CoffeeShops_5.setVisible(true);lyr_Bars_6.setVisible(true);lyr_Beach_7.setVisible(true);lyr_Trails_8.setVisible(true);lyr_MovieTheaters_9.setVisible(true);lyr_Hotels1Hotels_10.setVisible(true);lyr_Museum_11.setVisible(true);lyr_ZooandGardens_12.setVisible(true);lyr_GroceryStores_13.setVisible(true);lyr_University_14.setVisible(true);lyr_CostcoSamsWalmart_15.setVisible(true);lyr_Isochrones_16.setVisible(true);
+var layersList = [group_BaseMaps,group_Added_KMLs,group_Added_Location,lyr_Isochrones_16];
 lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'objectid': 'objectid', 'towns': 'towns', 'board_num': 'board_num', 'dist_num': 'dist_num', 'sd_desc': 'sd_desc', 'globalid': 'globalid', 'created_user': 'created_user', 'created_date': 'created_date', 'last_edited_user': 'last_edited_user', 'last_edited_date': 'last_edited_date', 'sd_desc2': 'sd_desc2', 'SHAPE_Length': 'SHAPE_Length', 'SHAPE_Area': 'SHAPE_Area', });
 lyr_Bus_Routes_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'objectid': 'objectid', 'rte_dir': 'rte_dir', 'rte': 'rte', 'dir': 'dir', 'Shape__Length': 'Shape__Length', });
 lyr_Bus_Stops_3.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'objectid': 'objectid', 'stopid': 'stopid', 'stopname': 'stopname', 'lat': 'lat', 'lon': 'lon', });
-lyr_ParksPark_Types_Data_4.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'objectid': 'objectid', 'park_cat': 'park_cat', 'tmk': 'tmk', 'park_type': 'park_type', 'park_name': 'park_name', 'main_dist': 'main_dist', 'link_id': 'link_id', 'legal_acres': 'legal_acres', 'dedicated': 'dedicated', 'globalid': 'globalid', 'created_user': 'created_user', 'created_date': 'created_date', 'last_edited_user': 'last_edited_user', 'last_edited_date': 'last_edited_date', 'SHAPE_Length': 'SHAPE_Length', 'SHAPE_Area': 'SHAPE_Area', });
-lyr_Gyms_5.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_CoffeeShops_6.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_Bars_7.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_Beach_8.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_Trails_9.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_MovieTheaters_10.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_Hotels1Hotels_11.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_Museum_12.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_ZooandGardens_13.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_GroceryStores_14.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_University_15.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Gyms_4.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_CoffeeShops_5.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Bars_6.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Beach_7.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Trails_8.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_MovieTheaters_9.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Hotels1Hotels_10.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Museum_11.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_ZooandGardens_12.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_GroceryStores_13.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_University_14.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_CostcoSamsWalmart_15.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_Isochrones_16.set('fieldAliases', {'ID': 'ID', 'CENTER_LON': 'CENTER_LON', 'CENTER_LAT': 'CENTER_LAT', 'AA_MINS': 'AA_MINS', 'AA_MODE': 'AA_MODE', 'TOTAL_POP': 'TOTAL_POP', });
 lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'objectid': 'Range', 'towns': 'TextEdit', 'board_num': 'TextEdit', 'dist_num': 'TextEdit', 'sd_desc': 'TextEdit', 'globalid': 'TextEdit', 'created_user': 'TextEdit', 'created_date': 'TextEdit', 'last_edited_user': 'TextEdit', 'last_edited_date': 'TextEdit', 'sd_desc2': 'TextEdit', 'SHAPE_Length': 'TextEdit', 'SHAPE_Area': 'TextEdit', });
 lyr_Bus_Routes_2.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'objectid': 'Range', 'rte_dir': 'TextEdit', 'rte': 'TextEdit', 'dir': 'TextEdit', 'Shape__Length': 'TextEdit', });
 lyr_Bus_Stops_3.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'objectid': 'Range', 'stopid': 'Range', 'stopname': 'TextEdit', 'lat': 'TextEdit', 'lon': 'TextEdit', });
-lyr_ParksPark_Types_Data_4.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', 'objectid': '', 'park_cat': '', 'tmk': '', 'park_type': '', 'park_name': '', 'main_dist': '', 'link_id': '', 'legal_acres': '', 'dedicated': '', 'globalid': '', 'created_user': '', 'created_date': '', 'last_edited_user': '', 'last_edited_date': '', 'SHAPE_Length': '', 'SHAPE_Area': '', });
-lyr_Gyms_5.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_CoffeeShops_6.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_Bars_7.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_Beach_8.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_Trails_9.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_MovieTheaters_10.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_Hotels1Hotels_11.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_Museum_12.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_ZooandGardens_13.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_GroceryStores_14.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
-lyr_University_15.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Gyms_4.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_CoffeeShops_5.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Bars_6.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Beach_7.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Trails_8.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_MovieTheaters_9.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Hotels1Hotels_10.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Museum_11.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_ZooandGardens_12.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_GroceryStores_13.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_University_14.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_CostcoSamsWalmart_15.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMode': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', });
+lyr_Isochrones_16.set('fieldImages', {'ID': '', 'CENTER_LON': '', 'CENTER_LAT': '', 'AA_MINS': '', 'AA_MODE': '', 'TOTAL_POP': '', });
 lyr_Neighborhood_Board_SubdistrictsNeighborhood_Board_SubDistrict_1.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'objectid': 'hidden field', 'towns': 'inline label - always visible', 'board_num': 'hidden field', 'dist_num': 'hidden field', 'sd_desc': 'hidden field', 'globalid': 'hidden field', 'created_user': 'hidden field', 'created_date': 'hidden field', 'last_edited_user': 'hidden field', 'last_edited_date': 'hidden field', 'sd_desc2': 'hidden field', 'SHAPE_Length': 'hidden field', 'SHAPE_Area': 'hidden field', });
 lyr_Bus_Routes_2.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'objectid': 'hidden field', 'rte_dir': 'inline label - always visible', 'rte': 'hidden field', 'dir': 'hidden field', 'Shape__Length': 'hidden field', });
 lyr_Bus_Stops_3.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'objectid': 'hidden field', 'stopid': 'hidden field', 'stopname': 'inline label - always visible', 'lat': 'hidden field', 'lon': 'hidden field', });
-lyr_ParksPark_Types_Data_4.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'objectid': 'hidden field', 'park_cat': 'hidden field', 'tmk': 'hidden field', 'park_type': 'hidden field', 'park_name': 'inline label - always visible', 'main_dist': 'hidden field', 'link_id': 'hidden field', 'legal_acres': 'hidden field', 'dedicated': 'hidden field', 'globalid': 'hidden field', 'created_user': 'hidden field', 'created_date': 'hidden field', 'last_edited_user': 'hidden field', 'last_edited_date': 'hidden field', 'SHAPE_Length': 'hidden field', 'SHAPE_Area': 'hidden field', });
-lyr_Gyms_5.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_CoffeeShops_6.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_Bars_7.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_Beach_8.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_Trails_9.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_MovieTheaters_10.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_Hotels1Hotels_11.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_Museum_12.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_ZooandGardens_13.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_GroceryStores_14.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_University_15.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
-lyr_University_15.on('precompose', function(evt) {
+lyr_Gyms_4.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_CoffeeShops_5.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_Bars_6.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_Beach_7.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_Trails_8.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_MovieTheaters_9.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_Hotels1Hotels_10.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_Museum_11.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_ZooandGardens_12.set('fieldLabels', {'Name': 'inline label - always visible', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_GroceryStores_13.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_University_14.set('fieldLabels', {'Name': 'hidden field', 'description': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMode': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', });
+lyr_CostcoSamsWalmart_15.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
+lyr_Isochrones_16.set('fieldLabels', {'ID': 'no label', 'CENTER_LON': 'no label', 'CENTER_LAT': 'no label', 'AA_MINS': 'header label - visible with data', 'AA_MODE': 'header label - visible with data', 'TOTAL_POP': 'header label - visible with data', });
+lyr_Isochrones_16.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
